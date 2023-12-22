@@ -15,7 +15,6 @@ struct LoginPage: View {
     
     var body: some View {
         
-        
         VStack {
             Image("background")
                 .resizable()
@@ -37,9 +36,8 @@ struct LoginPage: View {
                         Text("Welome to my demo app")
                     }
                 }
-                .padding(50)
-                
-                GoogleSignInButton(action: handleSignInButton)
+                .padding(50)                
+                user.showLogInButton()
             }
         }
     }

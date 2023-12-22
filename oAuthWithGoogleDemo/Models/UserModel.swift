@@ -13,14 +13,20 @@ final class UserModel: ObservableObject {
     
     @Published var email = ""
     @Published var givenName = ""
+    @Published var isLoggedIn:Bool = false
     
     init() {
         getUserStatus()
     }
 
-
-    func showLogInButton() -> any View {
-        return GoogleSignInButton(action: handleSignInButton)
+    func showLogInButton() -> some View {
+        GoogleSignInButton(action: handleSignInButton)
+    }
+    
+    func showLogOutButton() -> some View {
+        Button ("Log out") {
+            GIDSignIn.sharedInstance.signOut()
+        }
     }
     
     func getUserStatus() {
@@ -42,7 +48,8 @@ final class UserModel: ObservableObject {
                 // Inspect error
                 return
             }
-            print(result)
+            print("Sign in ...")
+            print(result.user.profile?.givenName ?? "")
         }
     }
     
