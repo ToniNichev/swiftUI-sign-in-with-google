@@ -38,6 +38,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
 }
 
+
 @main
 struct oAuthWithGoogleDemoApp: App {
     
@@ -45,19 +46,15 @@ struct oAuthWithGoogleDemoApp: App {
     
     var body: some Scene {
         WindowGroup {
-            if GIDSignIn.sharedInstance.currentUser == nil {
-                ContentView()
-                    .onOpenURL { url in
-                        GIDSignIn.sharedInstance.handle(url)
+            ContentView()
+                .onOpenURL { url in
+                    GIDSignIn.sharedInstance.handle(url)
+                }
+                .onAppear {
+                    GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
+                        // Check if `user` exists; otherwise, do something with `error`
                     }
-                    .onAppear {
-                        GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
-                            // Check if `user` exists; otherwise, do something with `error`
-                        }
-                    }
-            } else {
-                MainAppView()
-            }
+                }
         }
     }
 }

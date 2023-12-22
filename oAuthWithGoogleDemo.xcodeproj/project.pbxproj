@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C842AE52B35F49B00CC18EB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C842AE42B35F49B00CC18EB /* SettingsView.swift */; };
 		3CB1DD1D2B34E07100C2F9F1 /* oAuthWithGoogleDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1DD1C2B34E07100C2F9F1 /* oAuthWithGoogleDemoApp.swift */; };
 		3CB1DD1F2B34E07100C2F9F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CB1DD1E2B34E07100C2F9F1 /* ContentView.swift */; };
 		3CB1DD212B34E07200C2F9F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CB1DD202B34E07200C2F9F1 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		2FFA02B83D7B55DBCB6F2407 /* Pods-oAuthWithGoogleDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-oAuthWithGoogleDemo.release.xcconfig"; path = "Target Support Files/Pods-oAuthWithGoogleDemo/Pods-oAuthWithGoogleDemo.release.xcconfig"; sourceTree = "<group>"; };
+		3C842AE42B35F49B00CC18EB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3CB1DD192B34E07100C2F9F1 /* oAuthWithGoogleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oAuthWithGoogleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB1DD1C2B34E07100C2F9F1 /* oAuthWithGoogleDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oAuthWithGoogleDemoApp.swift; sourceTree = "<group>"; };
 		3CB1DD1E2B34E07100C2F9F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				3CB1DD1E2B34E07100C2F9F1 /* ContentView.swift */,
 				3CB1DD332B34EF6D00C2F9F1 /* LoginPage.swift */,
 				3CE831FC2B35129500F837AE /* MainAppView.swift */,
+				3C842AE42B35F49B00CC18EB /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				3CB1DD1F2B34E07100C2F9F1 /* ContentView.swift in Sources */,
 				3CE831FD2B35129500F837AE /* MainAppView.swift in Sources */,
 				3CB1DD342B34EF6D00C2F9F1 /* LoginPage.swift in Sources */,
+				3C842AE52B35F49B00CC18EB /* SettingsView.swift in Sources */,
 				3CE832022B351BC500F837AE /* UserModel.swift in Sources */,
 				3CB1DD1D2B34E07100C2F9F1 /* oAuthWithGoogleDemoApp.swift in Sources */,
 			);

@@ -10,6 +10,9 @@ import GoogleSignInSwift
 import GoogleSignIn
 
 struct LoginPage: View {
+    
+    private let user = UserModel()
+    
     var body: some View {
         
         

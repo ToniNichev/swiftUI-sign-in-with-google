@@ -10,9 +10,13 @@ import GoogleSignIn
 
 struct MainAppView: View {
     var body: some View {
-        Button ("Log out") {
-            GIDSignIn.sharedInstance.signOut()
+        
+        NavigationView {
+            NavigationLink(destination: SettingsView()) {
+                Text("Settings")
+            }
         }
+        
         Text("Main view")
     }
 }

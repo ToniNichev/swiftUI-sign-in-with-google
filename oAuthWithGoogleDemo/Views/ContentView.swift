@@ -6,17 +6,27 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 
 struct ContentView: View {
     
     var body: some View {
         VStack {
             let user = UserModel()
-            HStack {
-                Text("name:")
-                Text(user.givenName)
+            
+            if user.givenName == "" {
+                LoginPage()
+            } else {
+                HStack {
+                    Text("name:")
+                    Text(user.givenName)
+                    Button ("Log out") {
+                        GIDSignIn.sharedInstance.signOut()
+                    }
+                }
+                MainAppView()
             }
-            LoginPage()
+
         }
     }
 }
